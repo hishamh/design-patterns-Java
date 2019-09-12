@@ -1,0 +1,23 @@
+Stack		INPUT		Action
+E$		(		output: Q -> E$
+TK		(		output: E -> TK
+FH		(		output: T -> FH
+(E)		(		output: F -> (E)
+(		(		Matching: ( 
+TK		i		output: E -> TK
+FH		i		output: T -> FH
+i		i		output: F -> i
+i		i		Matching: i 
+		+		output: H -> 
++TK		+		output: K -> +TK
++		+		Matching: + 
+FH		i		output: T -> FH
+i		i		output: F -> i
+i		i		Matching: i 
+		)		output: H -> 
+		)		output: K -> 
+)		)		Matching: ) 
+*FH		*		output: H -> *FH
+*		*		Matching: * 
+i		i		output: F -> i
+i		i		Matching: i 
